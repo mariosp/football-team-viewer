@@ -2,6 +2,7 @@
   "name": "footballplayers",
   "private": true,
   "version": "0.0.0",
+  "main": "index.html",
   "description": "team's players viewer",
   "repository": "https://github.com/mariosp/football-team-viewer",
   "license": "MIT",
