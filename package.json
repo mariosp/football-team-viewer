@@ -12,10 +12,10 @@
     "angular-route": "1.7.x",
     "bootstrap": "3.3.x",
     "express": "^4.16.4",
-    "jquery": "3.3.x"
+    "jquery": "3.3.x",
+    "cpx": "^1.5.0"
   },
   "devDependencies": {
-    "cpx": "^1.5.0",
     "http-server": "^0.11.1"
   },
   "scripts": {
