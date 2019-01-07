@@ -7,19 +7,19 @@ This application is a small web app for viewing players from a specific football
  The application is made with AngularJS.
 
  ##Installation
- 
+
  -Download or clone from github
  -Navigate to the folder
  -run the command " npm install "
  -after the installation type " npm start " to start the application
- (http://localhost:8000)
+ (http://localhost:3000)
 
  ##Development
-Technologies I used:
+Technologies:
 
 HTML5/CSS3
 AngularJs 
-Node.js
+Node.js / express
 Bootstrap 3
 
 

@@ -10,6 +10,7 @@
     "angular-resource": "1.7.x",
     "angular-route": "1.7.x",
     "bootstrap": "3.3.x",
+    "express": "^4.16.4",
     "jquery": "3.3.x"
   },
   "devDependencies": {
@@ -22,9 +23,10 @@
     "postupdate-deps": "npm run copy-libs",
     "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" app/lib -C",
     "prestart": "npm install",
-    "start": "http-server ./app -a localhost -p 8000 -c-1",
+    "start2": "http-server ./app -a localhost -p 8000 -c-1",
     "pretest": "npm install",
     "preupdate-webdriver": "npm install",
-    "update-webdriver": "webdriver-manager update"
+    "update-webdriver": "webdriver-manager update",
+    "start": "node ./app/server.js"
   }
 }
