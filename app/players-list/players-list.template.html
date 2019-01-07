@@ -1,0 +1,10 @@
+<div class="sidebar">
+    <div  ng-repeat="player in $ctrl.players">
+    <a ng-click="$ctrl.btn($index)"href="#!/players/{{$index}}" >
+        <div class="pbox">
+                {{player.strPlayer}}
+        </div>   
+    </a>
+    </div>
+</div>
+

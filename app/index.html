@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="fPlayers">
+  <head>
+    <meta charset="utf-8">
+    <title>football team app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/player/player.module.js"></script>
+    <script src="core/player/player.service.js"></script>
+    <script src="players-list/players-list.module.js"></script>
+    <script src="players-list/players-list.component.js"></script>
+    <script src="player-detail/player-detail.module.js"></script>
+    <script src="player-detail/player-detail.component.js"></script>
+    <script src="fav-list/fav-list.module.js"></script>
+    <script src="fav-list/fav-list.component.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="row header">
+            <h1>{{team}} </h1>
+        </div>
+
+        <div class="row main">
+            <div class="col-xs-5 col-md-3 row-no-padding ">
+                <players-list></players-list>
+            </div>
+            <div class="col-xs-7 col-md-9 row-no-padding2 ">
+                    <div ng-view></div>
+                </div>
+        </div>
+
+        <div class="fav">
+            <fav-list></fav-list>
+        </div>
+    </div>
+
+  </body>
+</html>

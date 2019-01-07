@@ -1,0 +1,13 @@
+<div class="favbar">
+    <div class="pbox2" ng-repeat="player in $ctrl.favp">
+                <div class="fooname">
+                        {{player.strPlayer}}
+                </div>
+                
+                <div ng-click="$ctrl.changefav(player.idPlayer)" class="dele">
+                       X
+                </div>      
+
+    </div>
+</div>
+

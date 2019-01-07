@@ -1,0 +1,20 @@
+<div class="content">
+        <div class="row">
+                <h1 class="col-xs-9 tname">{{$ctrl.name}}</h1>
+                
+                <i id="icon" ng-click="$ctrl.cstar()" class="col-xs-3 fas fa-star fa-2x star {{$ctrl.colo}}"></i>
+
+        </div>
+
+                <div class="row detail">
+                <img class="col-md-5 image " ng-src={{$ctrl.imageUrl}} />
+                <div class="col-md-7 detail2">
+                        <p class="pa">Age: {{$ctrl.age}}</p> 
+                        <p class="pn">Nationality: {{$ctrl.nationality}}</p>   
+                        <p class="desc">{{$ctrl.description}}</p>
+                </div>
+                
+                </div>
+        
+</div>
+  
