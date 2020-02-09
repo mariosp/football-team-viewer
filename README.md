@@ -1,4 +1,4 @@
-![Heroku](https://heroku-badge.herokuapp.com/?app=eclass-mp)
+![Heroku](https://heroku-badge.herokuapp.com/?app=fbplayerviewer)
 
 # AngularJS Football Team Players Viewer
 
