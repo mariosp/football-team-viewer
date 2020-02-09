@@ -2,7 +2,7 @@
 
 angular.
   module('core.player').
-  factory('Player', function ($rootScope) {
+  factory('Player', function ($rootScope,$http) {
     var players;
     var favp = '';
 
@@ -15,7 +15,9 @@ angular.
         getStar : getStar,
         setFavPlayers :setFavPlayers,
         getFav : getFav,
-        setStarId : setStarId
+        setStarId : setStarId,
+        getPlayers: getPlayers,
+        getListOfPlayers: getListOfPlayers
     };
 
     // .................
@@ -72,6 +74,36 @@ angular.
 
     function getFav(){
         return favp;
+    }
+
+    async function getPlayers() {
+        let playersResult=[];
+        const playersList = getListOfPlayers().map(player => {
+            return $http.get(`https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${player}`)
+        });
+
+       await Promise.all(playersList).then(result =>{
+            console.log(result)
+            result.map(player=> {
+                playersResult.push(player.data.player[0]);
+            });
+            setData(playersResult);
+        });
+    }
+
+    function getListOfPlayers() {
+        return [
+            "Kalidou Koulibaly",
+            "Sadio Mane",
+            "Eden Hazard",
+            "Paul Pogba",
+            "Kylian Mbappe",
+            "Kevin De Bruyne",
+            "Virgil Van Dijk",
+            "Golo Kante",
+            "Neymar",
+            "Lionel Messi"
+        ].reverse()
     }
 
 });

@@ -6,34 +6,32 @@ angular.
   component('playersList', {
     templateUrl: 'players-list/players-list.template.html',
     controller: 
-      function PlayersListController($http, Player,$rootScope) {
+      function PlayersListController($http, Player, $rootScope, $scope) {
             
-        let contr = this;
+        var contr = this;
         contr.players;
-        contr.prevClicked=null;    
-            
+        contr.prevClicked=null;
 
-          $http.get("https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?t=Chelsea")
-              .then(function successCallback(response){
+       async function init() {
+           $rootScope.team = "Top 10 Football Players 2020";
+           await Player.getPlayers();
+           $scope.$apply(()=>{
+               contr.players = Player.getAll()
+           });
+       }
+       init();
 
-                Player.setData(response.data.player);
-                contr.players = Player.getAll();
-                $rootScope.team = contr.players[0].strTeam;
-              }, function errorCallback(response){
-                  console.log("Unable to perform get request");
-              });
+      contr.btn = function(index){
 
-              contr.btn = function(index){
-                
-                document.getElementsByClassName("pbox")[index].classList.add("clicked");
+        document.getElementsByClassName("pbox")[index].classList.add("clicked");
 
-                if(contr.prevClicked != null){
-                  document.getElementsByClassName("pbox")[contr.prevClicked].classList.remove("clicked");
-                }
+        if(contr.prevClicked != null){
+          document.getElementsByClassName("pbox")[contr.prevClicked].classList.remove("clicked");
+        }
 
-                contr.prevClicked = index;
-                
-              }
+        contr.prevClicked = index;
+
+      }
 
               
 
