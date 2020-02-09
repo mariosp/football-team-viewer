@@ -25,10 +25,10 @@ Technologies:
 ## Screenshots
 Mobile view
 
-![](https://drive.google.com/uc?export=view&id=1IpJNB3B0httzVcoVJ0Ks-KESJxm3qmjY)
+![](https://user-images.githubusercontent.com/3619970/74102758-4c21bb00-4b4f-11ea-9d46-bb1948c69d8a.jpg)
 Desktop view
 
-![](https://drive.google.com/uc?export=view&id=1XxNeVu9sO0JKEYAZSDiEsPLMy3-cW7Ly)
+![](https://user-images.githubusercontent.com/3619970/74102768-665b9900-4b4f-11ea-8066-c99f2e1fdada.PNG)
 
 
 
