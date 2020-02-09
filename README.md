@@ -1,12 +1,12 @@
 # AngularJS Football Team Players Viewer
 
-##Overview
+## Overview
 
 This application is a small web app for viewing players from a specific football team. The app uses the [SportsDB API Chelsea](http://www.thesportsdb.com/api/v1/json/1/searchplayers.php?t=Chelsea )
  to retrieve data about the players.
  The application is made with AngularJS.
 
-##Installation
+## Installation
 
  - Download or clone from github
  - Navigate to the folder
@@ -14,7 +14,7 @@ This application is a small web app for viewing players from a specific football
  - after the installation type " npm start " to start the application
  (http://localhost:3000)
 
-##Development
+## Development
 Technologies:
 
 - HTML5/CSS3
@@ -22,7 +22,7 @@ Technologies:
 - Node.js / express
 - Bootstrap 3
 
-##Screenshots
+## Screenshots
 Mobile view
  <img src="https://drive.google.com/uc?id=1bPElizTY-f5nKevwW5yRsiylduFhH5pk" />
 
